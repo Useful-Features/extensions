@@ -7,10 +7,18 @@
       "16": "icon_16x16.png",
       "48": "icon_48x48.png",
       "128": "icon_128x128.png"
-  },
+    },
     "action": {
       "default_title": "Useful Features",
       "default_icon": "icon_48x48.png",
       "default_popup": "popup.html"
-    }
+    },
+     "host_permissions": [
+      "https://scratch.mit.edu/*",
+      "https://api.scratch.mit.edu/*"
+    ],
+      "content_scripts": [{
+        "matches": ["https://scratch.mit.edu/*"],
+        "js": ["set.js"]
+    }]
   }

@@ -3,11 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="popup.css">
-  <script src="popup.js"></script>
 </head>
 <body>
     <p class="title">Useful Features</p>
-    <p>自分のプロフにコメント</p>
-    <input type="text" id="comment"><input type="button" value="送信" onclick="submit()">
+    <p><strong>生存確認</strong></p>
+    <p>プロフィールの"私が取り組んでいること"に最終ログイン時刻を表示</p>
+    <p>ユーザー名を入れることで有効化できます</p>
+    <div id="settings"></div>
+    <input type="text" id="username" placeholder="username">
+    <button type="button" class="Setbutton">更新</button>
+    <script src="popup.js"></script>
 </body>
 </html>
